@@ -1,0 +1,31 @@
+<div class="taservice-item">
+
+  {% if item.image %}
+  <div class="taservice-image">
+    <img src="{{ item.image }}" alt="{{ item.name }}">
+  </div>
+  {% endif %}
+
+  <div class="taservice-text">
+
+    <div class="taservice-period">
+      {{ item.period }}
+    </div>
+
+    <h3 class="taservice-title">
+      {{ item.name }}
+    </h3>
+
+    <div class="taservice-org">
+      {{ item.for }}
+    </div>
+
+    {% if item.description %}
+    <p class="taservice-description">
+      {{ item.description }}
+    </p>
+    {% endif %}
+
+  </div>
+
+</div>

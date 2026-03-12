@@ -1,0 +1,67 @@
+
+
+
+- year: 2025
+  venue: "MSc Graduation Project | DIS 2025 Work-in-Progress"
+  title: "PhysLens: Enrich Data Physicalization through a Lens of Details"
+  authors: "Yinying Miao, Hans Brombacher, Steven Houben"
+  type: "publication"
+  image: "assets/img/PhysLens_Cover.png"
+  pdf: "assets/publications/dis25-PhysLens.pdf"
+  doi: "https://doi.org/10.1145/3715668.3736358"
+  page: "/projects/physlens"
+  video: "https://youtu.be/5l-vZze8WC8?si=LytbNr_ntgxiGxWv"
+  app: "https://data.id.tue.nl/web/bDR2djBWLzgrU0dXV0gvZVh2Uk1ZZz09/index.html"
+  
+- year: 2026
+  venue: "Pictorial In-Submission to DIS 2026"
+  order: 1
+  title: "Review-through-Making: Developing a Tangible Vocabulary of Data Physicalization"
+  authors: "Yinying Miao, Hans Brombacher, Steven Houben"
+  type: "manuscript"
+  image: "assets/img/RtM_Cover.jpg"
+  page: "/projects/rtm"
+  article: "https://www.4tu.nl/du/projects/PhyDa/"
+  # pdf: " "
+  # doi: " "
+
+- year: 2026
+  venue: "Work-in-Progress In-Submission to DIS 2026"
+  order: 2
+  title: "PhySo: Fostering Shared Awareness of Office Noise through Data Physicalization"
+  authors: "Yinying Miao, Hans Brombacher, Steven Houben"
+  type: "manuscript"
+  image: "assets/img/PhySo_Main.png"
+  page: "/projects/physo"
+  article: "https://www.4tu.nl/du/projects/un-oso/"
+  # pdf: " "
+  # doi: " "
+
+- year: 2024
+  venue: "Chinese CHI 2024 Short Paper"
+  title: "AIlingo: Contextual Language Learning with Artificial Intelligence in Real-World Contexts"
+  authors: "Tianqin Lu, Sahil Bhatnagar, Nick van Geenen, Yinying Miao, Zitian Zhang, Aaqib Saeed, Jun Hu"
+  type: "publication"
+  image: "assets/img/AIlingo_Main.jpg"
+  pdf: "assets/publications/chchi24-AIlingo.pdf"
+  page: "/projects/AIlingo"
+  doi: "https://doi.org/10.1145/3758871.3758962"
+
+- year: 2024
+  # venue: " "
+  title: "OfficeSphere: An Input Data Physicalization of Office Environment"
+  authors: "Yinying Miao (supervised by: Rong-Hao Liang, Steven Houben)"
+  type: "others"
+  image: "assets/img/OfficeSphere_Cover.png"
+  pdf: ""
+  page: "/projects/officesphere"
+  article: "https://www.4tu.nl/du/projects/OfficeSphere-An-Input-Data-Physicalization-Tool-to-Reflect-on-Your-Office-Environment/"
+  code: "https://github.com/yinyingmiao/OfficeSphere"
+
+- year: 2022 
+  title: "SiTable: Attending Slow Technology Qualities from Literature"
+  authors: "Yinying Miao (supervised by: Pepijn Verburg, Steven Houben)"
+  type: "others"
+  image: "assets/img/SiTable_Cover.jpg"
+  page: "/projects/sitable"
+

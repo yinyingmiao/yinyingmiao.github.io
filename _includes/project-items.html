@@ -1,0 +1,57 @@
+<div class="project-item">
+
+  {% if project.image and project.image != " " %}
+  <div class="project-image">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+  </div>
+
+  <div class="project-text">
+    <h2>{{ project.title }}</h2>
+    <p class="project-meta">
+      {% if project.year %}{{ project.year }}{% endif %}
+      {% if project.authors %} 
+       {{ project.authors | replace: "Yinying Miao", "<strong>Yinying Miao</strong>" | markdownify }}
+      {% endif %}
+      {% if project.venue %}  {{ project.venue }}{% endif %}
+    </p>
+    <!-- {% if project.article %}
+      <p class="project-article">Article: {{ project.article }}</p>
+    {% endif %} -->
+    <!-- {% if project.doi %}
+      <p class="project-doi">DOI: {{ project.doi }}</p>
+    {% endif %} -->
+
+    <div class="project-links">
+        {% if project.doi and project.doi != "" %}
+        <a href="{{ project.doi }}" class="project-btn" target="_blank" rel="noopener">DOI</a>
+        {% endif %}
+
+        {% if project.page and project.page != "" %}
+        <a href="{{ project.page }}" class="project-btn" rel="noopener">Project Page</a>
+        {% endif %}
+
+        {% if project.pdf and project.pdf != "" %}
+        <a href="{{ project.pdf }}" class="project-btn" target="_blank" rel="noopener">PDF</a>
+        {% endif %}
+
+        {% if project.article and project.article != "" %}
+         <a href="{{ project.article }}" class="project-btn" target="_blank" rel="noopener">E-Magazine</a>
+        {% endif %}
+
+        {% if project.video and project.video != "" %}
+         <a href="{{ project.video }}" class="project-btn" target="_blank" rel="noopener">Project Demo</a>
+        {% endif %}
+
+        {% if project.code and project.code != "" %}
+         <a href="{{ project.code }}" class="project-btn" target="_blank" rel="noopener"> Code </a>
+        {% endif %}
+
+        {% if project.app and project.app != "" %}
+         <a href="{{ project.app }}" class="project-btn" target="_blank" rel="noopener"> Digital Lens </a>
+        {% endif %}
+
+    </div>
+  </div>
+
+  {% endif %}
+</div>

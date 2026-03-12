@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="{{ '/css/Index.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/projects.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/Global.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/footer.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/service.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/about.css' | relative_url }}">
+  
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="site-nav">
+      <a href="/index.html" class="site-name">Yinying Miao</a>
+      <nav class="navbar">
+          <ul class="nav-links">
+              <li><a href="/index.html#home">Home</a></li>
+              <li><a href="/index.html#research">Research</a></li>
+              <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+              <li><a href="{{ '/ta-service/' | relative_url }}">TA & Service</a></li>
+          </ul>
+      </nav>
+  </div>
+
+
+  <!-- Page content -->
+  <main class="site-content">
+    {{ content }}
+  </main>
+  
+  <!-- footer -->
+  {% include footer.html %}
+
+
+  <script>
+    document.querySelectorAll('a[href^="/index.html#"]').forEach(link => {
+    link.addEventListener('click', function(e){
+        const targetId = this.hash.slice(1); // remove #
+        const target = document.getElementById(targetId);
+        if(target){
+        e.preventDefault(); // prevent default jump
+        target.scrollIntoView({behavior: 'smooth'});
+        history.pushState(null, null, this.href); // update URL hash
+        }
+    });
+    });
+  </script>
+
+  
+
+</body>
+</html>

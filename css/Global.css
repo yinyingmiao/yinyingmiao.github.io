@@ -1,0 +1,106 @@
+/* Reset-ish */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue;
+  padding-top: 80px; /* space for fixed nav */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content{
+  flex: 1;
+}
+
+/* h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; } */
+
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+
+  border-radius: 999px;
+  padding: 12px 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.site-name {
+  position: fixed;
+  top: 26px;
+  left: 40px;
+  z-index: 1000;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* link to Projects */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+::-moz-selection { /* for firefox */
+  background: black;
+  color: white;
+}

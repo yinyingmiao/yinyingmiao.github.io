@@ -1,0 +1,11 @@
+<section class="taservice">
+
+<h1>TA and Service</h1>
+
+<p class="ta-service-text"> Since the start of my Master, I have served as a Teaching Assistant for several Industrial Design / interdepartmental courses, project squads (i.e., Vitality squad), and a research project. I was also active in the department through joining councils. Lastly, I have recently started to be a reviewer for conference submission reviews. </p>
+
+{% for item in site.data.service %}
+  {% include taservice-items.html item=item %}
+{% endfor %}
+
+</section>

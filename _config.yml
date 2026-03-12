@@ -1,0 +1,7 @@
+title: Yinying Miao
+markdown: kramdown
+
+# For outputing markdown files of projects:
+collections: 
+  projects:
+    output: true

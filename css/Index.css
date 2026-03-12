@@ -1,0 +1,292 @@
+.hero {
+  position: relative;
+
+  height: 40vh;
+  width: 100%;
+
+  background-image: url("/assets/header-web.png"); 
+  
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6); 
+  z-index: 0; 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  color: #111;
+  margin-left: 10vw;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  margin-top: 0.5rem;
+  font-size: 14pt;
+  color: #232325;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+
+.projects h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vw;
+}
+
+.projects h2 {
+  padding-bottom: 1rem; 
+  font-size: 1.5rem;
+}
+
+.project-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-links a {
+  margin-right: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.project-links a:hover {
+  border-bottom-color: #111;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.project-item {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 1.5rem; 
+  gap: 2rem; 
+  margin-bottom: 3rem;
+}
+
+.project-image {
+  flex: 0 0 30%; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  border-radius: 12px;
+}
+
+.project-text {
+  flex: 1; 
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project-btn {
+  padding: 6px 6px;
+  border-radius: 6px;
+  background-color: #8e8178;
+  color: #eadecc;  
+  font-size: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #eadecc;
+  color: #8e8178;
+  border: 1px solid #111;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background-color: #111;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+
+}
+
+.about-photo img {
+  width: 100%;
+  object-fit: contain;
+  /* border-radius: 6px; */
+}
+
+.about-text {
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.about-text a {
+  color: inherit !important;
+  text-decoration: underline;
+}
+
+.about-container-reversed {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.5rem;
+  align-items: center;
+
+}
+
+.about-contact {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.about-contact a {
+  color: inherit !important;
+  text-decoration: underline;
+}
+
+/* .about-contact a:hover {
+  text-decoration: underline;
+} */
+
+/* 
+@media (max-width: 768px) {
+
+.hero {
+  height: auto;
+  padding: 40px 20px;
+}
+
+.hero-content h1 {
+  font-size: 20pt;
+  margin-left: 0;
+}
+
+.hero-content p {
+  font-size: 12pt;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.project-item {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-text {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.navbar {
+  right: 10px;
+  top: 10px;
+  padding: 10px 16px;
+}
+
+.nav-links {
+  gap: 14px;
+}
+
+.nav-links a {
+  font-size: 12px;
+}
+
+.site-name {
+  left: 10px;
+  top: 10px;
+  font-size: 14px;
+}
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} */

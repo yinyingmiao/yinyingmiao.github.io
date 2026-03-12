@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<section class="project-header" style="--header-image: url('{{ page.cover }}');">
+
+  <div class="project-header-bg"></div>
+  <div class="project-header-overlay"></div>
+
+  <div class="project-header-content">
+      <h1>{{ page.title }}</h1>
+  </div>
+
+</section>
+
+<section class="project-info">
+
+  <!-- Abstract -->
+  <div class="project-abstract">
+    <p>{{ page.abstract }}</p>
+  </div>
+
+  <!-- Metadata -->
+  <div class="project-metadata">
+
+  {% if page.project_type %}
+  <p>
+    <span class="label"><strong>Project Type:</strong></span>
+    {{ page.project_type }}
+  </p>
+  {% endif %}
+
+  {% if page.publication %}
+  <p>
+    <span class="label"><strong>Publication:</strong></span>
+    {{ page.publication }}
+  </p>
+  {% endif %}
+
+  {% if page.links %}
+  <p>
+    <span class="label"><strong>Links:</strong></span>
+    <a href="{{ page.links }}">DOI</a>
+  </p>
+  {% endif %}
+
+  {% if page.experts %}
+  <p>
+    <span class="label"><strong>Expert Consultations:</strong></span>
+    {{ page.experts }}
+  </p>
+  {% endif %}
+  
+  {% if page.media %}
+  <p>
+    <span class="label"><strong>Media coverage:</strong></span>
+    {{ page.media }}
+  </p>
+  {% endif %}
+
+  {% if page.collaborators %}
+  <p>
+    <span class="label"><strong>Collaborators:</strong></span>
+    {{ page.collaborators }}
+  </p>
+  {% endif %}
+
+  {% if page.supervisors %}
+  <p>
+    <span class="label"><strong>Supervisors:</strong></span>
+    {{ page.supervisors }}
+  </p>
+  {% endif %}
+
+</section>
+
+{{ content }}
+
+{% if page.video %}
+<div class="project-video">
+  <iframe 
+    src="{{ page.video }}"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+{% endif %}
+
+<!-- Gallery -->
+{% if page.gallery %}
+<section class="project-gallery">
+
+{% for image in page.gallery %}
+  <img src="{{ image.src }}" alt="{{ image.alt }}">
+{% endfor %}
+
+</section>
+{% endif %}

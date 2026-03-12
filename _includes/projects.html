@@ -1,0 +1,29 @@
+<section class="projects" id="projects">
+  <h1 class="section-title">Selected Projects</h1>
+
+  {% assign publications = site.data.projects | where:"type","publication" | sort: "year" | reverse %}
+  {% assign manuscripts = site.data.projects | where:"type","manuscript" | sort: "order" %}
+  {% assign others = site.data.projects | where:"type","others" | sort: "year" | reverse %}
+
+  {% if publications.size > 0 %}
+    <h2>Publications</h2>
+    {% for project in publications %}
+      {% include project-items.html project=project %}
+    {% endfor %}
+  {% endif %}
+
+  {% if manuscripts.size > 0 %}
+    <h2>Manuscripts</h2>
+    {% for project in manuscripts %}
+      {% include project-items.html project=project %}
+    {% endfor %}
+  {% endif %}
+
+  
+  {% if others.size > 0 %}
+    <h2>Others</h2>
+    {% for project in others %}
+      {% include project-items.html project=project %}
+    {% endfor %}
+  {% endif %}
+</section>

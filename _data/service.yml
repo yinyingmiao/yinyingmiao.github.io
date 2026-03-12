@@ -1,0 +1,55 @@
+- period: 2026
+  name: "Reviewer"
+  for: "ACM DIS 2026 (paper, pictorial), ACM CHI 2026 (Late-breaking Work)"
+  type: "service"
+  image: "/assets/img/TA/DIS2026-logo.png"
+  # description: " "
+
+# - period: 2026
+#   name: "Paper/pictorial reviewer"
+#   for: "ACM DIS 2026"
+#   type: "service"
+#   image: " "
+#   description: " "
+
+# - period: 2026
+#   name: "Work-in-Progress paper reviewer"
+#   for: "ACM CHI 2026"
+#   type: "service"
+#   image: " "
+#   description: " "
+
+- period: "2023, 2024"
+  name: "Departmental Council Student Fraction Member"
+  for: "Department of Industrial Design, Eindhoven University of Technology"
+  type: "service"
+  image: "/assets/img/TA/ID-DC-photo.JPG"
+  description: "Discussing and advising on departmental matters such as regulations, budget plans, and social safety; while supporting students with the topics of study-life balance, communication, and international/pre-master integrations."
+
+- period: "11-2022 - 11-2024"
+  name: "Teaching Assistant (6 BSc courses)"
+  for: "Eindhoven University of Technology (Department of Industrial Design or interdepartmental)"
+  type: "TA"
+  image: "/assets/img/id-tue.png"
+  description: "Tutored and graded for 6 Bachelor courses, including: Human-centered Design (DDB200), Data acquisition and visualization through embodied sensors (DASU20), From idea to a blueprint (5UEUA0), Innovating by design (1ZAUA0/DBB230), Introduction to business design (DAB150), and Marketing research and design methods (1ZSUA0)."
+
+- period: "09-2023 - 06-2024"
+  name: "Squad Assistant"
+  for: "Vitality Squad (MSc/BSc project squad), Department of Industrial Design, Eindhoven University of Technology"
+  type: "TA"
+  image: "/assets/img/TA/vitality-banner.png"
+  description: "Assisted squad daily activities, including creating the semester plans, establishing communication between coaches and students, writing weekly newsletters, hosting project markets, and providing additional project/demo day supports."
+
+- period: "09-2023 - 06-2024"
+  name: "Master Education Council (M-Council) Member"
+  for: "Study Association Industrial Design Lucid (s.v.i.d Lucid), Eindhoven University of Technology"
+  type: "service"
+  image: "/assets/img/TA/Lucid.png"
+  description: "Provided inputs and feedback on the courses and projects to improve the education quality."
+
+- period: 2024
+  name: "Research Assistant"
+  for: "Research study - assisting field deployment (OfficeSense)"
+  type: "TA"
+  image: "/assets/img/TA/OfficeSense.JPG"
+  description: "Supported a field deployment study with the setup and data collection."
