@@ -66,6 +66,10 @@
   font-size: 1rem;
 }
 
+.project-meta {
+  font-size: 0.75rem;
+}  
+
 .project-desc {
   font-size: 0.8rem;
   line-height: 1.6;
