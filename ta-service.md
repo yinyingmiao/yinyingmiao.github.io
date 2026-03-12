@@ -1,7 +1,7 @@
 ---
 layout: default
 title: TA & Service
-premalink: /ta-service/
+permalink: /ta-service/
 ---
 
 {% include taservice.html %}
