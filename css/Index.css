@@ -31,7 +31,7 @@
 }
 
 .hero-content h1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #111;
   margin-left: 10vw;
@@ -50,7 +50,7 @@
 
 
 .projects h1{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -63,22 +63,22 @@
 
 .projects h2 {
   padding-bottom: 1rem; 
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .project-meta {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }  
 
 .project-desc {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   line-height: 1.6;
   margin-bottom: 16px;
 }
 
 .project-links a {
   margin-right: 16px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
