@@ -94,7 +94,7 @@ layout: default
 <section class="project-gallery">
 
 {% for image in page.gallery %}
-  <img src="{{ image.src }}" alt="{{ image.alt }}">
+  <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
 {% endfor %}
 
 </section>
