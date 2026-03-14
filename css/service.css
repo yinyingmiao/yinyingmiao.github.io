@@ -63,3 +63,30 @@
   font-size: 1rem;
   text-align: justify;
 }
+
+
+@media (max-width: 768px) {
+
+  .taservice {
+    padding: 1rem;
+  }
+
+  .taservice-item {
+    grid-template-columns: 1fr;   /* stack image and text */
+    gap: 0.8rem;
+  }
+
+  .taservice-image {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+  .taservice-title {
+    font-size: 1rem;
+  }
+
+  .taservice-description {
+    font-size: 0.85rem;
+  }
+
+}
