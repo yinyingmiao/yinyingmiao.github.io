@@ -11,7 +11,7 @@ project_type: Individual MSc Design-Research Project (with light collaboration)
 
 # links: 
 
-video: https://youtu.be/nY5QOuzS4a0
+video: nY5QOuzS4a0
 
 # experts: 
 
