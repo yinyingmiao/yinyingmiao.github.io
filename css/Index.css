@@ -287,4 +287,28 @@
   font-size: 14px;
 }
 
+    .about-container,
+  .about-container-reversed {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    gap: 1.5rem;
+  }
+
+  .about-photo,
+  .about-photo img {
+    width: 100%;          /* full width */
+    height: auto;         /* maintain aspect ratio */
+    object-fit: contain;  /* keep image visible */
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 0.95rem;   /* slightly smaller text for mobile */
+    text-align: left;     /* easier to read on phone */
+    line-height: 1.5rem;  /* slightly tighter spacing */
+  }
+
+  .about-contact {
+    font-size: 0.9rem;    /* scale contact info for small screens */
+  }
 }
