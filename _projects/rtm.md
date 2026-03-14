@@ -12,7 +12,7 @@ publication: "Manuscript as Pictorial under review (collaborated with supervisor
 
 # links: https://doi.org/10.1145/3715668.3736358
 
-video: https://youtu.be/U1XQD6cbzsY
+video: U1XQD6cbzsY
 
 experts: Sandra Bae, Kim Sauvé, Rosa van Koningsbruggen, Miriam Sturdee, Sarah Hayes, Annemiek Veldhuis, Mengyan Guo, Britt Stegers
 
