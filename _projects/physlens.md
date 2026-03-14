@@ -12,7 +12,7 @@ publication: "DIS 2025 Work-in-Progress (collaborated with supervisors: Steven H
 
 links: https://doi.org/10.1145/3715668.3736358
 
-video: https://www.youtube.com/embed/5l-vZze8WC8?si=OF9NgFa6YXY5XBMT
+video: 5l-vZze8WC8?si=67qANvW5YEAACvvv
 
 experts: Rosa van Koningsbruggen, Sandra Bae, Miriam Sturdee, Óscar González, Rong-Hao Liang, Mengyan Guo, Olaf Adan, Britt Stegers, Tianqin Lu
 
