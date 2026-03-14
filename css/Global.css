@@ -76,6 +76,53 @@ h3 { font-size: 20px; } */
   width: 100%;
 }
 
+/* Toggle button hidden on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid rgba(211, 207, 199, 0.25);
+  color: rgba(242, 242, 242, 0.9);
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Mobile: collapse into menu */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+
+    background: #080808;
+    border-bottom: 1px solid rgba(211, 207, 199, 0.18);
+    padding: 0.5rem 1.5rem;
+
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-link,
+  .nav-link:visited {
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
 .site-name {
   position: fixed;
   top: 26px;
