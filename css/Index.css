@@ -218,7 +218,7 @@
   text-decoration: underline;
 } */
 
-/* 
+
 @media (max-width: 768px) {
 
 .hero {
@@ -244,11 +244,14 @@
 
 .project-item {
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .project-image {
   width: 100%;
+  height: auto;
+  margin-bottom: 0.75rem;
 }
 
 .project-image img {
@@ -285,8 +288,3 @@
 }
 
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-} */
