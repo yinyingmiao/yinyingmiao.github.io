@@ -57,6 +57,7 @@ h3 { font-size: 20px; } */
   background: none;
   box-shadow: none;
   padding: 0;
+  margin-left: auto;
 }
 
 .nav-links {
