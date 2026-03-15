@@ -11,7 +11,6 @@ html, body {
 
 body {
   font-family: Helvetica Neue;
-  padding-top: 80px; /* space for fixed nav */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,44 +26,40 @@ h3 { font-size: 20px; } */
 
 
 /* Navbar */
-
+/* Sticky header wrapper */
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
-  width: 100%;
-  background: #080808;
-  border-bottom: none;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #eee;
 }
 
+/* Container for name + nav */
 .site-nav {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
-  min-height: 56px;
+  padding: 18px 40px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
 }
 
-/* name */
+/* Site name */
 .site-name {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   color: #111;
 }
 
+/* Navbar container */
 .navbar {
-  position: static;   
-  background: none;
-  box-shadow: none;
-  padding: 0;
   margin-left: auto;
 }
 
+/* Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -78,21 +73,7 @@ h3 { font-size: 20px; } */
   font-weight: 500;
 }
 
-/* Hover underline animation */
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 1px;
-  background: #111;
-  transition: width 0.3s ease;
-}
 
-.nav-links a:hover::after {
-  width: 100%;
-}
 
 /* Toggle button hidden on desktop */
 .nav-toggle {
@@ -141,19 +122,6 @@ h3 { font-size: 20px; } */
   }
 }
 
-.site-name {
-  position: fixed;
-  top: 26px;
-  left: 40px;
-  z-index: 1000;
-
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #111;
-}
 
 /* link to Projects */
 html {
