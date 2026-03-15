@@ -28,61 +28,7 @@
   <!-- footer -->
   {% include footer.html %}
 
-
-  <script>
-    document.querySelectorAll('a[href^="/index.html#"]').forEach(link => {
-    link.addEventListener('click', function(e){
-        const targetId = this.hash.slice(1); // remove #
-        const target = document.getElementById(targetId);
-        if(target){
-        e.preventDefault(); // prevent default jump
-        target.scrollIntoView({behavior: 'smooth'});
-        history.pushState(null, null, this.href); // update URL hash
-        }
-    });
-    });
-  </script>
-
-  <script>
-  function closeMenu() {
-    const menu = document.getElementById("site-menu");
-    const btn = document.querySelector(".nav-toggle");
-    if (!menu || !btn) return;
-
-    menu.classList.remove("is-open");
-    btn.setAttribute("aria-expanded", "false");
-  }
-
-  function toggleMenu() {
-    const menu = document.getElementById("site-menu");
-    const btn = document.querySelector(".nav-toggle");
-    if (!menu || !btn) return;
-
-    const isOpen = menu.classList.toggle("is-open");
-    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  }
-
-  document.addEventListener("click", (e) => {
-    const menu = document.getElementById("site-menu");
-    const btn = document.querySelector(".nav-toggle");
-    if (!menu || !btn) return;
-
-    const clickedToggle = btn.contains(e.target);
-    const clickedInsideMenu = menu.contains(e.target);
-
-    if (!clickedToggle && !clickedInsideMenu) closeMenu();
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const menu = document.getElementById("site-menu");
-    if (!menu) return;
-
-    // Close menu when any link inside it is clicked (including anchors)
-    menu.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => closeMenu());
-    });
-  });
-</script>
+  
   
 
 </body>
