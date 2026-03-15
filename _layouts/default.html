@@ -16,20 +16,8 @@
 </head>
 <body>
 
-  <!-- Navigation bar -->
-  <div class="site-nav">
-      <a href="/index.html" class="site-name">Yinying Miao</a>
-      <nav class="navbar">
-          <button class="nav-toggle">☰</button>
-        
-          <ul class="nav-links">
-              <li><a href="/index.html#home">Home</a></li>
-              <li><a href="/index.html#research">Research</a></li>
-              <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-              <li><a href="{{ '/ta-service/' | relative_url }}">TA & Service</a></li>
-          </ul>
-      </nav>
-  </div>
+  <!-- header -->
+  {% include header.html %}
 
 
   <!-- Page content -->
