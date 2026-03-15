@@ -28,20 +28,25 @@ h3 { font-size: 20px; } */
 
 /* Navbar */
 
-.site-nav {
-  position: fixed;
+.site-header {
+  position: sticky;
   top: 0;
-  left: 0;
+  z-index: 100;
   width: 100%;
-  z-index: 1000;
+  background: #080808;
+  border-bottom: none;
+}
+
+.site-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  min-height: 56px;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 20px 60px;
-  background: white;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  gap: 0.75rem;
 }
 
 /* name */
