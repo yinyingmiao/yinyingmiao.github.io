@@ -7,13 +7,18 @@
 
   <div class="project-text">
     <h2>{{ project.title }}</h2>
-    <p class="project-meta">
-      {% if project.year %}{{ project.year }}{% endif %}
+    <p class="project-meta"> {% if project.year %}{{ project.year }}{% endif %} </p>
+    <p class="project-meta">   
       {% if project.authors %} 
-       {{ project.authors | replace: "Yinying Miao", "<strong>Yinying Miao</strong>" | markdownify }}
-      {% endif %}
-      {% if project.venue %}  {{ project.venue }}{% endif %}
+      {{ project.authors | replace: "Yinying Miao", "<strong>Yinying Miao</strong>" | markdownify }}
+      {% endif %} 
     </p>
+    <p class="project-meta">  
+      {% if project.venue %}  
+      {{ project.venue }}
+      {% endif %}
+    </p> /* trying to force apply */
+    
     <!-- {% if project.article %}
       <p class="project-article">Article: {{ project.article }}</p>
     {% endif %} -->
@@ -49,7 +54,6 @@
         {% if project.app and project.app != "" %}
          <a href="{{ project.app }}" class="project-btn" target="_blank" rel="noopener"> Digital Lens </a>
         {% endif %}
-
     </div>
   </div>
 
