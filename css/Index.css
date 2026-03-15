@@ -190,9 +190,13 @@
 
 .about-text {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: justify;
 }
+
+.about-text h1 {
+  font-size: 1.1rem;
+}  
 
 .about-text a {
   color: inherit !important;
