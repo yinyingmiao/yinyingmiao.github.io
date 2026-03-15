@@ -63,7 +63,7 @@
 
 .projects h2 {
   padding-bottom: 1rem; 
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .project-desc {
@@ -114,6 +114,10 @@
 
 .project-text {
   flex: 1; 
+}
+
+.project-meta { /* added */
+  font-size: 0.8rem;
 }
 
 .project-links {
