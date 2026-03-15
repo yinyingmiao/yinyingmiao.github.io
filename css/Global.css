@@ -28,36 +28,48 @@ h3 { font-size: 20px; } */
 
 /* Navbar */
 
-.navbar {
+.site-nav {
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  border-radius: 999px;
-  padding: 12px 28px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
 }
 
-/* Links */
+/* name */
+.site-name {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+.navbar {
+  position: static;   
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 32px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #111;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-
-  position: relative;
-  transition: color 0.3s ease;
 }
 
 /* Hover underline animation */
