@@ -28,46 +28,53 @@
   <!-- footer -->
   {% include footer.html %}
 
-  <script>
-    function closeMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      const toggleButton = document.querySelector('.nav-toggle');
-      if (!navLinks || !toggleButton) return;
+<script>
+  function closeMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggleButton = document.querySelector('.nav-toggle');
+    if (!navLinks || !toggleButton) return;
 
-      navLinks.classList.remove("is-open");
-      toggleButton.setAttribute("aria-expanded", "false");
-    }
+    navLinks.classList.remove("is-open");
+    toggleButton.setAttribute("aria-expanded", "false");
+  }
 
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      const toggleButton = document.querySelector('.nav-toggle');
-      if (!navLinks || !toggleButton) return;
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggleButton = document.querySelector('.nav-toggle');
+    if (!navLinks || !toggleButton) return;
 
-      const isOpen = navLinks.classList.toggle("is-open");
-      toggleButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    }
+    const isOpen = navLinks.classList.toggle("is-open");
+    toggleButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  }
 
-    document.addEventListener('click', (e) => {
-      const navLinks = document.querySelector('.nav-links');
-      const toggleButton = document.querySelector('.nav-toggle');
-      if (!navLinks || !toggleButton) return;
-
-      const clickedToggle = toggleButton.contains(e.target);
-      const clickedInsideMenu = navLinks.contains(e.target);
-  
-      if (!clickedToggle && !clickedInsideMenu) closeMenu();
-  });
-
+  // Toggle menu when button is clicked
   document.addEventListener("DOMContentLoaded", () => {
-      const navLinks =  document.querySelector('.nav-links');
-      if (!navLinks) return;
-  
-      // Close menu when any link inside it is clicked (including anchors)
+    const toggleButton = document.querySelector(".nav-toggle");
+    if (toggleButton) {
+      toggleButton.addEventListener("click", toggleMenu);
+    }
+
+    const navLinks = document.querySelector(".nav-links");
+    if (navLinks) {
+      // Close menu when clicking a link inside it
       navLinks.querySelectorAll("a").forEach((a) => {
-        a.addEventListener("click", () => closeMenu());
+        a.addEventListener("click", closeMenu);
       });
+    }
   });
-  </script>
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    const navLinks = document.querySelector('.nav-links');
+    const toggleButton = document.querySelector('.nav-toggle');
+    if (!navLinks || !toggleButton) return;
+
+    const clickedToggle = toggleButton.contains(e.target);
+    const clickedInsideMenu = navLinks.contains(e.target);
+
+    if (!clickedToggle && !clickedInsideMenu) closeMenu();
+  });
+</script>
   
 
 </body>
