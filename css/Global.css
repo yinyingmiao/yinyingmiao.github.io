@@ -90,10 +90,22 @@ h3 { font-size: 20px; } */
 
 /* Mobile: collapse into menu */
 @media (max-width: 700px) {
+
+  .site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
   .nav-toggle {
-    display: inline-flex;
+    /* display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    margin-left: auto;
+    color: #111; /* dark black color */
+    border-color: #111; /* optional, if you want the border black too */
+    background: transparent; /* keep transparent */
+    font-size: 1.2rem;
   }
 
   .nav-links {
@@ -103,12 +115,20 @@ h3 { font-size: 20px; } */
     left: 0;
     right: 0;
 
-    background: #080808;
+    background: #fff;
     border-bottom: 1px solid rgba(211, 207, 199, 0.18);
     padding: 0.5rem 1.5rem;
 
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  .nav-links a {
+      color: #111;
+  }
+
+  .nav-links a:hover {
+  text-decoration: underline;
   }
 
   .nav-links.is-open {
