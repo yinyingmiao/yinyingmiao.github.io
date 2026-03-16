@@ -227,7 +227,7 @@
 } */
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* hero section */
 
 .hero {
   height: auto;
@@ -248,7 +248,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* project section */
 
 .project-item {
   flex-direction: column;
@@ -270,6 +270,24 @@
 .project-text {
   width: 100%;
 }
-
 }
 
+@media (max-width: 768px) { /* about section */
+  
+  .about-container,
+  .about-container-reversed {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
+
+  .about-photo,
+  .about-text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
