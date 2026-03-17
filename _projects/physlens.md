@@ -14,6 +14,8 @@ links: https://doi.org/10.1145/3715668.3736358
 
 video: 5l-vZze8WC8?si=67qANvW5YEAACvvv
 
+supervisors: Steven Houben, Hans Brombacher
+
 experts: Rosa van Koningsbruggen, Sandra Bae, Miriam Sturdee, Óscar González, Rong-Hao Liang, Mengyan Guo, Olaf Adan, Britt Stegers, Tianqin Lu
 
 abstract: >
