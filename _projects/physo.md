@@ -15,6 +15,8 @@ video: 7ZSDtiDzOnc
 
 # experts: 
 
+supervisors: Steven Houben, Hans Brombacher
+
 media: <a href="https://www.4tu.nl/du/projects/un-oso/">4TU DU Magazine</a> 
 
 abstract: >
