@@ -15,6 +15,8 @@ video: nY5QOuzS4a0
 
 # experts: 
 
+supervisors: Rong-Hao Liang, Steven Houben
+
 media: <a href="https://www.4tu.nl/du/projects/OfficeSphere-An-Input-Data-Physicalization-Tool-to-Reflect-on-Your-Office-Environment/">4TU DU Magazine</a> 
 
 abstract: >
