@@ -16,7 +16,7 @@ video: U1XQD6cbzsY
 
 experts: Sandra Bae, Kim Sauvé, Rosa van Koningsbruggen, Miriam Sturdee, Sarah Hayes, Annemiek Veldhuis, Mengyan Guo, Britt Stegers
 
-supervisors: Hans Brombacher, Steven Houben
+supervisors: Steven Houben, Hans Brombacher
 
 media: <a href="https://www.4tu.nl/du/projects/PhyDa/">4TU DU Magazine</a>  
 
