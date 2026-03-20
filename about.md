@@ -13,7 +13,7 @@ permalink: /about/
             <br>
             <p>My interest in HCI has brought me to collaborate with my supervisors for a few ongoing conference submissions based on my projects, mainly towards ACM DIS and TEI. At the same time, I have been engaged in supporting BSc courses and project squads as a Teaching Assistant, as well as acting as a council member for both departmental bodies and study associations. Find out more <a href="/ta-service/">here</a>. </p>
             <br>
-            <p><strong>I am currently exploring PhD positions in Europe/US in the field of HCI.</strong> I am genuinely interested in topics of Tangible/Hybrid User Interfaces, tangible/hybrid interactions, and data-driven approaches. Meanwhile, I am open to combine these topics with other research domains to enrich interactions and user experiences (e.g., AI, XR).</p>
+            <p><strong>I am currently exploring PhD opportunities in Europe/US in the field of HCI.</strong> I am genuinely interested in topics of Tangible/Hybrid User Interfaces, tangible/hybrid interactions, and data-driven approaches. Meanwhile, I am open to combine these topics with other research domains to enrich interactions and user experiences (e.g., AI, XR).</p>
         </div>
         <div class="about-photo">
             <img src="/assets/img/Yinying_Miao.jpg" alt="Yinying Miao">
