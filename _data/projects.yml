@@ -14,7 +14,7 @@
   app: "https://data.id.tue.nl/web/bDR2djBWLzgrU0dXV0gvZVh2Uk1ZZz09/index.html"
   
 - year: 2026
-  venue: "Full paper in revision for CHI 2027"
+  venue: "Full paper in submission"
   order: 1
   title: "Review-through-Making: Developing a Tangible Vocabulary of Data Physicalization"
   authors: "Yinying Miao, Hans Brombacher, Steven Houben"
@@ -26,7 +26,7 @@
   # doi: " "
 
 - year: 2026
-  venue: "Work-in-Progress In-Submission to DIS 2026"
+  venue: "Work-in-Progress in submission"
   order: 2
   title: "PhySo: Fostering Shared Awareness of Office Noise through Data Physicalization"
   authors: "Yinying Miao, Hans Brombacher, Steven Houben"
