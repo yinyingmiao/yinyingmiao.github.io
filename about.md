@@ -20,8 +20,8 @@ permalink: /about/
             <div class="about-contact">
                <h2><strong>Yinying Miao</strong></h2>
                <p> HCI/design researcher </p>
-               <p> MSc graduate Industrial Design, Eindhoven University of Technology</p>
-               <p><a href="mailto:yinyingmiao2001@gmail.com">yinyingmiao2001@gmail.com</a></p>
+               <p> HCI PhD Student, Aarhus University</p>
+               <p><a href="mailto:yinying.miao@cs.au.dk">yinying.miao@cs.au.dk</a></p>
             </div>
         </div>
     </div>
